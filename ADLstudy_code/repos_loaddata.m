@@ -76,7 +76,7 @@ switch DataType_tokens{1}
         else
             frewind(fid);
             switch DataType_tokens{2}
-                case 'ECG1'
+                case {'ECG1', 'Sync'} 
                     Data = fread(fid, [5, Inf], 'uint16')';     % [M,N]  read elements to fill an M-by-N matrix, in column order.
                 case {'WristL', 'WristR', 'AnkleR'}
                     Data = fread(fid, [6, Inf], 'uint16')';     % [M,N]  read elements to fill an M-by-N matrix, in column order.

@@ -42,9 +42,11 @@ fs_shimmer = 200;
 % % subplot(3,1,3); plot(t_AnkleR,AnkleR_magnz,'g'); title 'AnkleR Magn Z';
 
 
+clear
+close all
 
 sensor_data = 'Shimmer_ECG1';
-ECG1_data= fopen(strcat(path_data,sensor_data,'.bin'));
+ECG1_data= fopen('/media/Elements/Gabriele/ADL_study/ECG2/2/2/acceleration/acceltot.bin');
 
 
  
@@ -77,6 +79,34 @@ subplot(2,1,2); plot(t_ECG1, ECG1_channel2,'g'); title 'ECG1 Channel 2';
 % *************************************************************************%
 
 
+clear 
+close all
+fs_shimmer = 200;
+ECG1_data= fopen('/media/Elements/Gabriele/ADL_study/All/Patient_2/SensorData/Shimmer_ECG1.bin');
+ShimmerValues_ECG1 = fread(ECG1_data,[5,Inf],'uint16');
+
+
+% *************************************************************************%
+
+%ECG1
+ECG1_accx = ShimmerValues_ECG1(1,:)';
+ECG1_accy = ShimmerValues_ECG1(2,:)';
+ECG1_accz = ShimmerValues_ECG1(2,:)';
+
+ECG1_channel1 = -1*ShimmerValues_ECG1(3,:)';
+ECG1_channel2 = -1*ShimmerValues_ECG1(4,:)';
+
+L_ECG1= length(ECG1_accx);
+t_ECG1 = (0:L_ECG1-1)/fs_shimmer;
+
+figure
+subplot(3,1,1); plot(t_ECG1, ECG1_accx,'r'); title 'ECG1 Accel X';
+subplot(3,1,2); plot(t_ECG1, ECG1_accy,'g'); title 'ECG1 Accel Y';
+subplot(3,1,3); plot(t_ECG1, ECG1_accz,'b'); title 'ECG1 Accel Z';
+
+figure
+subplot(2,1,1); plot(t_ECG1, ECG1_channel1,'r'); title 'ECG1 Channel 1';
+subplot(2,1,2); plot(t_ECG1, -1*ECG1_channel2,'g'); title 'ECG1 Channel 2';
 
 % *************************************************************************%
 
