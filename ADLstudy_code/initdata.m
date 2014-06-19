@@ -92,7 +92,8 @@ RepEntry(Index).File.Shimmer_AnkleR = [ 'SensorData' filesep 'Shimmer_AnkleR.bin
 RepEntry(Index).File.Shimmer_Sync = [ 'SensorData' filesep 'Shimmer_Sync.bin' ];
 
 RepEntry(Index).Dir.ALL = [ 'All' filesep 'Patient_1' ];
-RepEntry(Index).SFrq = 200;
+% RepEntry(Index).SFrq = 200;
+RepEntry(Index).SFrq = 170.67;
 RepEntry(Index).Subject = 'S1';
 RepEntry(Index).Recdate = '20140616T115000';
 
@@ -114,7 +115,8 @@ RepEntry(Index).File.Shimmer_AnkleR = [ 'SensorData' filesep 'Shimmer_AnkleR.bin
 RepEntry(Index).File.Shimmer_Sync = [ 'SensorData' filesep 'Shimmer_Sync.bin' ];
 
 RepEntry(Index).Dir.ALL = [ 'All' filesep 'Patient_2' ];
-RepEntry(Index).SFrq = 200;
+% RepEntry(Index).SFrq = 200;
+RepEntry(Index).SFrq = 170.67;
 RepEntry(Index).Subject = 'S2';
 RepEntry(Index).Recdate = '20140617T125800';
 
