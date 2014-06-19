@@ -1,11 +1,26 @@
 clear
 close all
 
+
+% for Partindex 1 and 2
+initialization_1_2
+Partindex = 2;
+st_marker_ADL
+
+
+
+
 initialization
 
 
-% prepare_oxycondata
 
+Partindex = [2];
+prepare_oxycondata
 
-Partindex = 1;
+clear
+close all
+
+initialization
+Partindex = 2;
 st_marker_ADL
+

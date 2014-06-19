@@ -1,7 +1,7 @@
 clear 
 close all
 
-path_data = '/media/Elements/Gabriele/ADL_study/Test_SDLOG/WristR/5/5/acceleration/';
+path_data = '/media/Elements/Gabriele/ADL_study/Test_SDLOG/WristL/1/1/acceleration/';
 wristR_data= fopen(strcat(path_data,'acceltot.bin'));
 
 fs_shimmer = 170.67;

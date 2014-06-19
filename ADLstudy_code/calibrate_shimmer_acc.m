@@ -101,7 +101,7 @@ function calib_data = calibrate_shimmer_acc(sensor,acc_data)
             
     calib_data = acc_data;
     for i = 1 : size(calib_data,1)
-        calib_data(i,1:3) = (R'*K'*(acc_data(i,1:3)'-b))';
+        calib_data(i,1:3) = (R'*K'*(acc_data(i,1:3)'-b))'/10000;
     end
 
 
