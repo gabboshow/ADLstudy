@@ -1,5 +1,5 @@
 % ---------------------------------------------------------------------
-% initdata: Sensatron validation
+% initdata: ALDstudy
 % ---------------------------------------------------------------------
 clear Repository;
 
@@ -74,13 +74,9 @@ clear Index;
 
 
 
-% ---------------------------------------------------------------------
-% Test recordings, 03-04-2013
-% Eindhoven
-% ---------------------------------------------------------------------
-
-% labeling checklist:  Sync:   Activity:
-% Participant: Patient_1
+% Test recordings, 16-06-2014
+% CIRO+
+% Participant: Patient_21
 Index = 1; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync' }; 
 RepEntry(Index).Assoc.Shimmer_ECG1 = {'AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
@@ -100,8 +96,9 @@ RepEntry(Index).SFrq = 200;
 RepEntry(Index).Subject = 'S1';
 RepEntry(Index).Recdate = '20140616T115000';
 
-% labeling checklist:  Sync:   Activity:
-% Participant: Patient_1
+% Test recordings, 17-06-2014
+% CIRO+
+% Participant: Patient_2
 Index = 2; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync' }; 
 RepEntry(Index).Assoc.Shimmer_ECG1 = {'AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};

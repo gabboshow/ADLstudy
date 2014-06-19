@@ -21,7 +21,8 @@ fprintf('\n%s: Loading...', mfilename);
 clear('FeatureSet', 'DTable');
 for i = 1:length(UseSystems)
     fprintf('\n%s:    Processing %s...', mfilename, UseSystems{i})
-    [FeatureSet{i} datasps DTable{i}] = repos_loaddata(Repository, Partindex, UseSystems{i}, 'orgsps', 200);
+%     [FeatureSet{i} datasps DTable{i}] = repos_loaddata(Repository, Partindex, UseSystems{i}, 'orgsps', 200);
+    [FeatureSet{i} datasps DTable{i}] = repos_loaddata_calib(Repository, Partindex, UseSystems{i}, 'orgsps', 200);
     if any(isnan(FeatureSet{i})), error('NaNs found.'); end;
     if isempty(FeatureSet{i}), fprintf('\n%s: Data field is empty.', mfilename); end;
 end;

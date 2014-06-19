@@ -15,7 +15,7 @@ switch lower(UserName)
 %         Repository.Path = '/home/nas01/datasets/Gabriele_Smartscope3/';    
         
     case '$user'
-%         Repository.Path = strcat('E:',filesep,'Gabriele',filesep,'nas01',filesep,'datasets',filesep,'Gabriele_Smartscope3',filesep);    
+        Repository.Path = 'E:\Gabriele\ADL_study';    
         
     otherwise
         fprintf('\n%s: System returned UserName "%s".', mfilename, lower(UserName));

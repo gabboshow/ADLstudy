@@ -2,15 +2,15 @@ switch machine
     
     %Linux
     case 0
-        path_data_oxicon = '/media/Elements/Gabriele/ADL_study/All/Patient_2/SensorData/';
+        path_data_oxicon = strcat('/media/Elements/Gabriele/ADL_study/All/Patient_',Partindex,'/SensorData/');
     %Windows
     case 1
-        path_data_oxicon = 'E:\Gabriele\ADL_study\All\Patient_2\SensorData\';
+        path_data_oxicon = strcat('E:\Gabriele\ADL_study\All\Patient_',Partindex,'\SensorData\');
         
 end
 
 % contains data from mobile oxycon
-[~,~,data_oxycon] = xlsread(strcat(path_data_oxicon,oxycon_filename),1);
+[~,~,data_oxycon] = xlsread(strcat(path_data_oxicon,oxycon_filename{Partindex}),1);
 
 % vector contaning onsets timestamps in seconds
 respiration_onsets = zeros(size(data_oxycon,1)-2,1);
