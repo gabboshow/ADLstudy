@@ -9,35 +9,25 @@ setrepositorypath;
 
 % Classes
 Repository.Classlist = { ...
-    'Sync',...                                      %1
-    'Clapping',...                                  %2
-    'Sitting',...                                   %3
-    'Standing',...                                  %4
-    'Resting',...                                   %5
-    'Putting socks',...                             %6
-    'Putting shoes',...                             %7
-    'Putting vest',...                              %8
-    'Removing vest',...                             %9
-    'Walking (before stairs)',...                   %10
-    'Climbing stairs',...                           %11
-    'Walking (after stairs)',...                    %12
-    'Walking (before dish)',...                     %13
-    'Washing the dishes',...                        %14
-    'Walking (after dish)',...                      %15
-    'Walking (before the groceries)',...            %16
-    'Putting the groceries in the basket'...        %17
-    'Walking with the groeceries'...                %18
-    'Walking (after groeceries)'...                 %19
-    'Walking (before towels)'...                    %20
-    'Folding towels'...                             %21
-    'Walking (after towels)'...                     %22
-    'Walking (before vacuum cleaner)'...            %23
-    'Vacuum cleaning'...                            %24
-    'Walking (after vacuum cleaner)'...             %25
-    'Putting groceries in the fridge'...            %26
-    'Stop for exhaustion'...                        %27
-    'Preparing for vacuum cleaning'...              %28  (waking towards the vacuum cleaner, plugging the vacuum cleaner)
-    'Putting in order after vacuum cleaning'...     %29  (removing the plug)
+    'Hit 5 times',...                               %1
+    'Hit 3 times',...                               %2
+    'Hit 2 times',...                               %3
+    'Sit',...                                       %4
+    'Stand',...                                     %5
+    'Rest',...                                      %6
+    'Put socks and shoes',...                       %7
+    'Put vest',...                                  %8
+    'Walk',...                                      %9
+    'Climb stairs',...                              %10    
+    'Wash dishes',...                               %11
+    'Pack groceries',...                            %12
+    'Walking with groeceries'...                    %13
+    'Unpack groeceries'...                          %14
+    'Fold towels'...                                %15
+    'Prepare vacuum cleaner'...                     %16
+    'Vacuum clean'...                               %17
+    'Put away vacuum cleaner'...                    %18
+    'Stop for exhaustion'...                        %19
     };
 
 Repository.Classnames = Repository.Classlist;

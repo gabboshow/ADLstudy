@@ -4,7 +4,7 @@ close all
 
 % for Partindex 1 and 2
 initialization
-Partindex = 2;
+Partindex = 1;
 st_marker_ADL
 
 
