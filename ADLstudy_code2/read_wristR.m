@@ -1,20 +1,20 @@
 clear 
 close all
 
-path_data = '/home/2012-0362_icare4copd/datasets/ADLstudy/ADL004/All_Data/B1/';
-data= fopen(strcat(path_data,'data_Sync.bin'));
+path_data = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\ADL004\All_Data\B1\';
+data= fopen(strcat(path_data,'data_AnkleR.bin'));
 
 fs_shimmer = 170.67;
 fs_true = 1024/(ceil(1024/fs_shimmer));
 
 % read data
 more off
-ShimmerValues = fread(data,[4,Inf]);
+ShimmerValues = fread(data,[6, Inf], 'uint16');
 
 
-data_accx = ShimmerValues(2,:)';
-data_accy = ShimmerValues(3,:)';
-data_accz = ShimmerValues(4,:)';
+data_accx = ShimmerValues(1,:)';
+data_accy = ShimmerValues(2,:)';
+data_accz = ShimmerValues(3,:)';
 
 data_acc = [data_accx,data_accy,data_accz];
 data_acc_calib = calibrate_shimmer('wristR',data_acc)./10000;
