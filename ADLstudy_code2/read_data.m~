@@ -1,0 +1,23 @@
+patient = 7;
+path_data = strcat('/home/2012-0362_icare4copd/datasets/ADLstudy/ADL00',num2str(patient),'/Data/B1/',sensor,'adl_test_2014');
+
+% sensor = 'AnkleR';
+% sensor = 'WristR';
+% sensor = 'WristL';
+sensor = 'ECG1';
+% sensor = 'Sync';
+
+switch sensor
+    case 'ECG1'
+        sensor_folder = 'ecg1';
+end
+dirName = strcat('/home/2012-0362_icare4copd/datasets/ADLstudy/ADL007/Data/B1/',sensor,'/adl_test_2014/',ecg1-000');
+data= fopen(strcat(path_data,'data_',sensor,'.bin'));
+
+
+
+[fileList, subfoldList] = getAllFiles(dirName);
+
+for i = 1 : numel(fileList)
+    
+end

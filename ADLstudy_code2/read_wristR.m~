@@ -5,10 +5,10 @@ clear
 % path_data = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\ADL004\All_Data\B1\';
 path_data = '/home/2012-0362_icare4copd/datasets/ADLstudy/ADL007/All_Data/B1/';
 
-% sensor = 'AnkleR';
+sensor = 'AnkleR';
 % sensor = 'WristR';
 % sensor = 'WristL';
-sensor = 'ECG1';
+% sensor = 'ECG1';
 % sensor = 'Sync';
 data= fopen(strcat(path_data,'data_',sensor,'.bin'));
 
@@ -63,7 +63,8 @@ elseif strcmp(sensor,'Sync')
     
 else
     ShimmerValues = fread(data,[7, Inf], 'uint16');
-    
+    accelx = fread(data, 'uint16', 7);
+
     data_acc = ShimmerValues(2:4,:)';
     data_gyro = ShimmerValues(5:7,:)';
     
