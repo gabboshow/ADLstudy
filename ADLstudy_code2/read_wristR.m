@@ -1,7 +1,7 @@
 clear 
 close all
 
-path_data = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\ADL004\All_Data\B1\';
+path_data = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\ADL001\All_Data\B1\';
 data= fopen(strcat(path_data,'data_AnkleR.bin'));
 
 fs_shimmer = 170.67;
