@@ -33,7 +33,7 @@ for patient_index = 1 : numel(patients)
                     for j = 1 : numel(fileList)
                             data= fopen(fileList{j});
                             clear ShimmerValues
-                            ShimmerValues = fread(data,[bytes_to_read, Inf], 'uint16');
+                            ShimmerValues = fread(data, 'uint16');
                             fclose(data);
                             data_all = [data_all;ShimmerValues'];
                             data_acc = [data_acc;ShimmerValues(bits_acc,:)'];
