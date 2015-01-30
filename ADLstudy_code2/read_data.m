@@ -12,7 +12,8 @@ for patient_index = 1 : numel(patients)
         patient = patients(patient_index);
         for i = 1 : numel(sensors)
             sensor = sensors{i};
-            path_data = strcat('/home/2012-0362_icare4copd/datasets/ADLstudy/ADL00',num2str(patient),'/Data/',test,'/',sensor,'/adl_test_2014/');
+            path_data = strcat('\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\ADL00',num2str(patient),'\Data\',test,'\',sensor,'\adl_test_2014\');            
+%             path_data = strcat('/home/2012-0362_icare4copd/datasets/ADLstudy/ADL00',num2str(patient),'/Data/',test,'/',sensor,'/adl_test_2014/');
             [fileList, subfoldList] = getAllFiles(path_data);
 
             switch sensor
@@ -26,14 +27,24 @@ for patient_index = 1 : numel(patients)
                         bits_acc = 2:4;
                         bits_ecg = 5:6;
                     end
+                    data_all = [];
                     data_acc = [];
                     data_ecg = [];
                     for j = 1 : numel(fileList)
                             data= fopen(fileList{j});
+                            clear ShimmerValues
                             ShimmerValues = fread(data,[bytes_to_read, Inf], 'uint16');
+                            fclose(data);
+                            data_all = [data_all;ShimmerValues'];
                             data_acc = [data_acc;ShimmerValues(bits_acc,:)'];
                             data_ecg = [data_ecg;ShimmerValues(bits_ecg,:)'];
                     end
+                    figure
+                    for k = 1 : size(data_all,2)
+                        subplot(3,2,k)
+                        plot(data_all(:,k));
+                    end
+                    close all                            
                     if ~isempty(data_acc)
                         figure
                         subplot(2,1,1)
@@ -61,6 +72,7 @@ for patient_index = 1 : numel(patients)
                     data_gyro = [];
                     for j = 1 : numel(fileList)
                             data= fopen(fileList{j});
+                            clear ShimmerValues
                             ShimmerValues = fread(data,[bytes_to_read, Inf], 'uint16');
                             fclose(data);
                             data_acc = [data_acc;ShimmerValues(bits_acc,:)'];
@@ -94,6 +106,7 @@ for patient_index = 1 : numel(patients)
                     
                     for j = 1 : numel(fileList)
                             data= fopen(fileList{j});
+                            clear ShimmerValues
                             ShimmerValues = fread(data,[bytes_to_read, Inf], 'uint16');
                             fclose(data);
                             data_acc = [data_acc;ShimmerValues(bits_acc,:)'];
