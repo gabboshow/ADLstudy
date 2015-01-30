@@ -1,7 +1,7 @@
 clear 
 close all
 
-patients = [9];
+patients = [4];
 
 sensors = {'AnkleR', 'WristR', 'WristL', 'ECG1', 'Sync'};
 tests = {'B1','B2','E'};
