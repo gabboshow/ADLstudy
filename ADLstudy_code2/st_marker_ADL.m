@@ -22,8 +22,8 @@ fprintf('\n%s: Loading...', mfilename);
 clear('FeatureSet', 'DTable');
 for i = 1:length(UseSystems)
     fprintf('\n%s:    Processing %s...', mfilename, UseSystems{i})
-%     [FeatureSet{i} datasps DTable{i}] = repos_loaddata(Repository, Partindex, UseSystems{i}, 'orgsps', 200);
-    [FeatureSet{i} datasps DTable{i}] = repos_loaddata_calib(Repository, Partindex, UseSystems{i}, 'orgsps', 170.67);
+    [FeatureSet{i} datasps DTable{i}] = repos_loaddata(Repository, Partindex, UseSystems{i}, 'orgsps', 170.7);
+%     [FeatureSet{i} datasps DTable{i}] = repos_loaddata_calib(Repository, Partindex, UseSystems{i}, 'orgsps', 170.7);
     if any(isnan(FeatureSet{i})), error('NaNs found.'); end;
     if isempty(FeatureSet{i}), fprintf('\n%s: Data field is empty.', mfilename); end;
 end;
@@ -90,12 +90,12 @@ viewsize = 30; % initial view in seconds
 % setup marker drawerobj
 
 %% PLOT 1: SHIMMER ECG1 ACCELERATION XYZ (acceleration left upper arm)
-plotnr = 1; system = 'Shimmer_ECG1';  ylabel = 'ShimmeECG1_Channel2';
-% plotnr = 1; system = 'Shimmer_ECG1';  ylabel = 'ShimmeECG1_AccXYZ';
+% plotnr = 1; system = 'Shimmer_ECG1';  ylabel = 'ShimmeECG1_Channel2';
+plotnr = 1; system = 'Shimmer_ECG1';  ylabel = 'ShimmeECG1_AccXYZ';
 
 available_channels = 1:length(DTable{plotnr});
-show_channels = strmatch('Channel2ECG1', DTable{plotnr}(available_channels));
-% show_channels = strmatch('AccECG1', DTable{plotnr}(available_channels));
+% show_channels = strmatch('Channel2ECG1', DTable{plotnr}(available_channels));
+show_channels = strmatch('AccECG1', DTable{plotnr}(available_channels));
 
 %drawerobj.disp(plotnr).ylim = [-50 50]; % for acc data
 % drawerobj.disp(plotnr).hideplot = true;
@@ -166,24 +166,6 @@ drawerobj.disp(plotnr).alignsps = alignsps(plotnr);
 drawerobj.disp(plotnr).hidesignal = true(1,length(drawerobj.disp(plotnr).signalnames));
 drawerobj.disp(plotnr).hidesignal(show_channels) = false;
 
-%% PLOT 4: 
-plotnr = 4; system = 'Shimmer_AnkleR';  ylabel = 'ShimmerAnkleR_AccXYZ';
-
-available_channels = 1:length(DTable{plotnr});
-show_channels = strmatch('AccAnkleR', DTable{plotnr}(available_channels));
-
-%drawerobj.disp(plotnr).ylim = [-50 50]; % for acc data
-% drawerobj.disp(plotnr).hideplot = true;
-drawerobj.disp(plotnr).type = system;  drawerobj.disp(plotnr).ylabel = ylabel;
-drawerobj.disp(plotnr).data = FeatureSet{plotnr}(:, available_channels);
-drawerobj.disp(plotnr).sfreq = datasps;
-drawerobj.disp(plotnr).xvisible = drawerobj.disp(plotnr).sfreq*viewsize;
-drawerobj.disp(plotnr).signalnames = DTable{plotnr}(available_channels);
-drawerobj.disp(plotnr).alignshift = alignshift(plotnr);
-drawerobj.disp(plotnr).alignsps = alignsps(plotnr);
-drawerobj.disp(plotnr).hidesignal = true(1,length(drawerobj.disp(plotnr).signalnames));
-drawerobj.disp(plotnr).hidesignal(show_channels) = false;
-
 %% PLOT 5: 
 plotnr = 5; system = 'Shimmer_Sync';  ylabel = 'ShimmerSync_AccXYZ';
 
@@ -203,23 +185,6 @@ drawerobj.disp(plotnr).hidesignal = true(1,length(drawerobj.disp(plotnr).signaln
 drawerobj.disp(plotnr).hidesignal(show_channels) = false;
 
 
-% %% PLOT 6: 
-% plotnr = 6; system = 'Oxycon';  ylabel = 'Respiration onsets';
-% 
-% available_channels = 1:length(DTable{plotnr});
-% show_channels = strmatch('Time', DTable{plotnr}(available_channels));
-% 
-% %drawerobj.disp(plotnr).ylim = [-50 50]; % for acc data
-% % drawerobj.disp(plotnr).hideplot = true;
-% drawerobj.disp(plotnr).type = system;  drawerobj.disp(plotnr).ylabel = ylabel;
-% drawerobj.disp(plotnr).data = FeatureSet{plotnr}(:, available_channels);
-% drawerobj.disp(plotnr).sfreq = datasps;
-% drawerobj.disp(plotnr).xvisible = drawerobj.disp(plotnr).sfreq*viewsize;
-% drawerobj.disp(plotnr).signalnames = DTable{plotnr}(available_channels);
-% drawerobj.disp(plotnr).alignshift = alignshift(plotnr);
-% drawerobj.disp(plotnr).alignsps = alignsps(plotnr);
-% drawerobj.disp(plotnr).hidesignal = true(1,length(drawerobj.disp(plotnr).signalnames));
-% drawerobj.disp(plotnr).hidesignal(show_channels) = false;
 
 
 

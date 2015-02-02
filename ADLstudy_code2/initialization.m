@@ -1,13 +1,16 @@
-machine = 0; % 0 Linux, 1 Windows
+machine = 1; % 0 Laptop, 1 Philips windows, 2 Philips clusters
 
+switch machine
+    case 0
+        error('Set the path');
+    case 1
+        path = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\';
+    case 2
+        error('Set the path');
+end
 
-fs_shimmer = 200;
-fs_shimmer_true = 1024/(ceil(1024/fs_shimmer));
-
-% fs_oxycon = 171;
-% oxycon_filename = {'','Kilani_170614.xlsx'};
-
-
+tests = {'B1'};%,'B2','E'};
+sensors = {'ecg'};%{'ankleR','wristR','wristL','ecg','sync','oxycon'};
 
 
 
