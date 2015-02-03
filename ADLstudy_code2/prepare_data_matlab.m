@@ -3,7 +3,7 @@
 for index_test = 1 : numel(tests)
     for index_sensor = 1 : numel(sensors)
         %1) Read all data in folder
-        [fileList, subfoldList] = getAllFiles(strcat(path,patient,'\Data_matlab\',tests{index_test},'\',sensors{index_sensor}));
+        [fileList, subfoldList] = getAllFiles(strcat(path,patient,filesep,'Data_matlab',filesep,tests{index_test},filesep,sensors{index_sensor}));
 
         if strcmp(sensors{index_sensor},'oxycon')
             cal_data = importfile_xls(fileList{1}, 1);
@@ -34,9 +34,9 @@ for index_test = 1 : numel(tests)
         end
 
 
-        foldername = strcat(path,patient,'\Data_excel\',tests{index_test});
+        foldername = strcat(path,patient,filesep,'Data_excel',filesep,tests{index_test});
         mkdir(foldername);
-        csvwrite(strcat(foldername,'\data_',sensors{index_sensor},'.dat'),cal_data);
+        csvwrite(strcat(foldername,filesep,'data_',sensors{index_sensor},'.dat'),cal_data);
         
         clear cal_data
 

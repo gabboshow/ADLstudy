@@ -12,6 +12,9 @@ switch lower(UserName)
     case 'gspina'
         error('Set path');
         
+    case '310153563'
+        Repository.Path = '/home/2012-0362_icare4copd/datasets/ADLstudy/';          
+        
     case '$user'
         Repository.Path = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\';    
         
