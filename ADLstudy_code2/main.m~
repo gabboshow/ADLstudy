@@ -67,8 +67,6 @@ prepare_data_matlab
 Partindex = 4;
 st_marker_ADL
 
-clear
-Partindex = 4;
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 
 

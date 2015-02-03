@@ -6,11 +6,11 @@ switch machine
     case 1
         path = '\\code1\storage\2012-0362_icare4copd_ux\datasets\ADLstudy\';
     case 2
-        error('/home/2012-0362_icare4copd/datasets/ADLstudy/');
+        path = '/home/2012-0362_icare4copd/datasets/ADLstudy/';
 end
 
-tests = {'B1'};%,'B2','E'};
-sensors = {'ecg'};%{'ankleR','wristR','wristL','ecg','sync','oxycon'};
+tests = {'B1','B2','E'};
+sensors = {'ecg'};% {'ankleR','wristR','wristL','ecg','sync'};
 
 
 
