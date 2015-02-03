@@ -1,6 +1,3 @@
-clear
-close all
-
 figure
 hold on
 plot(dataankleR(:,2),'r')
@@ -9,7 +6,17 @@ plot(dataankleR(:,4),'b')
 
 [x1_ankle,~] = ginput(1)
 [x2_ankle,~] = ginput(1)
-samples_ankle = x2_ankle-x1_ankle;
+samples_ankle2 = x2-x1_ankle;
+
+
+fs_des = 170.7;
+fs_ecg = 130;
+[p,q] = rat(fs_des/fs_ecg,0.0001);
+y = resample(data,p,q);
+
+
+fs_ankle = 170.7;
+t2=samples_ankle2/fs_ankle;
 
 
 
@@ -18,40 +25,10 @@ hold on
 plot(dataecg(:,2),'r')
 plot(dataecg(:,3),'g')
 plot(dataecg(:,4),'b')
-
 [x1_ecg,~] = ginput(1)
 [x2_ecg,~] = ginput(1)
-samples_ecg = x2_ecg-x1_ecg;
-
-
-figure
-hold on
-plot(datasync(:,2),'r')
-plot(datasync(:,3),'g')
-plot(datasync(:,4),'b')
-x1_sync = 7842;
-x2_sync = 7983;
-samples_sync = x2_sync-x1_sync;
-
-[p,q] = rat(samples_ankle/samples_ecg,0.0001);
-
-
-fs_ecg2 = samples_ecg/t2;
-
-
-fs_des = 170.7;
-fs_ecg = 130;
-
-y = resample(data,p,q);
-
-
-fs_ankle = 170.7;
-t2=samples_ankle/fs_ankle;
-
-
-
-
-
+samples_ecg2 = x2_ecg-x1_ecg;
+fs_ecg2 = samples_ecg2/t2;
 
  
 % t/60
@@ -72,7 +49,7 @@ patient = 'ADL006';
 prepare_data_matlab
 
 
-Partindex = 7;
+Partindex = 5;
 st_marker_ADL
 
 

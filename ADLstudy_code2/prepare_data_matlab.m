@@ -24,11 +24,12 @@ for index_test = 1 : numel(tests)
             cal_data = data;
             cal_data(:,2:4)=cal_acc;
             
-            if strcmp(sensors{index_sensor},'ecg')
-                [p,q] = rat(170.7/181.6,0.0001);
-                y = resample(cal_data,p,q);
-                cal_data = y;
-            end
+%             if strcmp(sensors{index_sensor},'ecg')
+%                 [p,q] = rat(143/123,0.0001);
+%                 y = resample(cal_data,p,q);
+%                 clear cal_data
+%                 cal_data = y;
+%             end
             clear cal_acc data
         end
 
