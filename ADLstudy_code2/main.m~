@@ -60,14 +60,23 @@ initialization
 % Read data from location where we import the row data (.../Data_matlab)
 % Calibrate the accelerometer data
 % Save coma separated data in (.../Data_excel)
-patient = 'ADL004';
+patient = 'ADL013';
 prepare_data_matlab
 
 
-Partindex = 4;
+Partindex = 9;
 st_marker_ADL
 
+clear
+close all
+
+initialization
+patient = 'ADL004';
+tests = {'E'};
+Partindex = 6;
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
+
+write_file_Astrid
 
 
 % initialization
