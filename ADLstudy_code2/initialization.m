@@ -1,4 +1,4 @@
-machine = 1; % 0 Laptop, 1 Philips windows, 2 Philips clusters
+machine = 12; % 0 Laptop, 1 Philips windows, 2 Philips clusters
 
 switch machine
     case 0
