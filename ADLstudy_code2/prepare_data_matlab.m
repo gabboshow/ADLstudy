@@ -20,9 +20,9 @@ for index_test = 1 : numel(tests)
         
             clear data_temp
         
-%             cal_acc = calibrate_shimmer_acc(sensors{index_sensor},data(:,2:4));
+            cal_acc = calibrate_shimmer_acc(sensors{index_sensor},data(:,2:4));
             cal_data = data;
-%             cal_data(:,2:4)=cal_acc;
+            cal_data(:,2:4)=cal_acc;
             
 %             if strcmp(sensors{index_sensor},'ecg')
 %                 [p,q] = rat(143/123,0.0001);

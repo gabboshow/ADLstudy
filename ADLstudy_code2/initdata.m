@@ -162,7 +162,7 @@ RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B1' filesep 'data_sy
 RepEntry(Index).Dir.ALL = 'ADL006';
 RepEntry(Index).SFrq = 170.70;
 RepEntry(Index).Subject = 'S6';
-RepEntry(Index).Recdate = '20141007T115000';
+RepEntry(Index).Recdate = '20141007T081600';
 
 
 % Test recordings, 08-10-2014
@@ -191,9 +191,9 @@ RepEntry(Index).Subject = 'S6';
 RepEntry(Index).Recdate = '20141008T115000';
 
 
-% Test recordings, 05-02-2015
+% Test recordings, 21-11-2014
 % CIRO+
-% Participant: ADL013E - Brekelmans
+% Participant: ADL006E - Verstappen
 Index = 9; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
 % RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
@@ -211,10 +211,10 @@ RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'E' filesep 'data_a
 RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'E' filesep 'data_sync.dat' ];
 % RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
 
-RepEntry(Index).Dir.ALL = 'ADL013';
+RepEntry(Index).Dir.ALL = 'ADL006';
 RepEntry(Index).SFrq = 170.70;
-RepEntry(Index).Subject = 'S13';
-RepEntry(Index).Recdate = '20150205T114500';
+RepEntry(Index).Subject = 'S6';
+RepEntry(Index).Recdate = '20150205T080400';
 
 
 % ---------------------------------------------------------------------
