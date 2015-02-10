@@ -67,13 +67,14 @@ prepare_data_matlab
 Partindex = 8;
 st_marker_ADL
 
+%%
 clear
 close all
 
 initialization
-patient = 'ADL004';
-tests = {'E'};
-Partindex = 6;
+patient = 'ADL006';
+tests = {'B2'};
+Partindex = 8;
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 
 write_file_Astrid
