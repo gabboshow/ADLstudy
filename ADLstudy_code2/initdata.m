@@ -220,7 +220,7 @@ RepEntry(Index).Recdate = '20150205T080400';
 % Test recordings, 15-10-2014
 % CIRO+
 % Participant: ADL007B1 - Driessen-van den Broek
-Index = 7; 
+Index = 10; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
 % RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
 RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
@@ -246,7 +246,7 @@ RepEntry(Index).Recdate = '20141015T082100';
 % Test recordings, 17-10-2014
 % CIRO+
 % Participant: ADL007B2 - Driessen-van den Broek
-Index = 8; 
+Index = 11; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
 % RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
 RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
@@ -272,7 +272,7 @@ RepEntry(Index).Recdate = '20141017T090800';
 % Test recordings, 28-11-2014
 % CIRO+
 % Participant: ADL007E - Driessen-van den Broek
-Index = 9; 
+Index = 12; 
 RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
 % RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
 RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};

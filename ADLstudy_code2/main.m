@@ -64,7 +64,7 @@ patient = 'ADL006';
 prepare_data_matlab
 
 
-Partindex = 9;
+Partindex = 10;
 st_marker_ADL
 
 %%
