@@ -72,8 +72,8 @@ clear
 close all
 
 initialization
-patient = 'ADL007';
-tests = {'B1'};
+patient = 'ADL006';
+tests = {'E'};
 Partindex = 10;
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 
