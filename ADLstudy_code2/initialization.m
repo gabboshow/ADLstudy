@@ -1,4 +1,4 @@
-machine = 1; % 0 Laptop, 1 Philips windows, 2 Philips clusters
+machine = 2; % 0 Laptop, 1 Philips windows, 2 Philips clusters
 
 switch machine
     case 0
@@ -9,7 +9,7 @@ switch machine
         path = '/home/2012-0362_icare4copd/datasets/ADLstudy/';
 end
 
-tests = {'B1','B2','E'};
+tests = {'E'};%{'B1','B2','E'};
 sensors = {'ecg','wristL','wristR','ankleR','sync'};
 
 
