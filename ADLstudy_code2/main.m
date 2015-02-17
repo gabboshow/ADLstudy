@@ -60,7 +60,7 @@ initialization
 % Read data from location where we import the row data (.../Data_matlab)
 % Calibrate the accelerometer data
 % Save coma separated data in (.../Data_excel)
-patient = 'ADL006';
+patient = 'ADL008';
 prepare_data_matlab
 
 
