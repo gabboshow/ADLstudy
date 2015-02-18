@@ -64,7 +64,11 @@ patient = 'ADL008';
 prepare_data_matlab
 
 
-Partindex = 12;
+clear
+close all
+addpath(genpath('/home/310153563/Code/sw-matlab-actlab'))
+addpath(genpath('/home/310153563/Code/sw-matlab-marker'))
+Partindex = 15;
 st_marker_ADL
 
 %%
