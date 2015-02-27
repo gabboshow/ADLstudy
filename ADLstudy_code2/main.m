@@ -76,9 +76,9 @@ clear
 close all
 
 initialization
-patient = 'ADL007';
+patient = 'ADL008';
 tests = {'E'};
-Partindex = 12;
+Partindex = 15;
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 
 write_file_Astrid
