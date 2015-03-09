@@ -9,7 +9,7 @@ switch machine
         path = '/home/2012-0362_icare4copd/datasets/ADLstudy/';
 end
 
-tests = {'B2'};
+tests = {'E'};
 sensors = {'ecg','wristL','wristR','ankleR','sync'};
 
 

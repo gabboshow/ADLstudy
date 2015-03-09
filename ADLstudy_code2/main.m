@@ -60,7 +60,7 @@ initialization
 % Read data from location where we import the row data (.../Data_matlab)
 % Calibrate the accelerometer data
 % Save coma separated data in (.../Data_excel)
-patient = 'ADL010';
+patient = 'ADL013';
 prepare_data_matlab
 
 
@@ -68,7 +68,7 @@ clear
 close all
 addpath(genpath('/home/310153563/Code/sw-matlab-actlab'))
 addpath(genpath('/home/310153563/Code/sw-matlab-marker'))
-Partindex = 21;
+Partindex = 30;
 st_marker_ADL
 
 %%
@@ -76,9 +76,9 @@ clear
 close all
 
 initialization
-patient = 'ADL010';
-tests = {'B2'};
-Partindex = 20;
+patient = 'ADL013';
+tests = {'E'};
+Partindex = 30;
 
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 

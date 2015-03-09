@@ -41,7 +41,7 @@ Repository.TargetClasses = 1:19;
 
 %% PART IDs
 
-Repository.UseParts = 4:21;
+Repository.UseParts = [4:21,28:30];
 
 
 
@@ -537,6 +537,89 @@ RepEntry(Index).Dir.ALL = 'ADL010';
 RepEntry(Index).SFrq = 170.70;
 RepEntry(Index).Subject = 'S10';
 RepEntry(Index).Recdate = '20150113T075900';
+
+
+%%TO INSERT PATIENT ADL011 (Partindex 22 23 24) ADL012 (25 26 27)
+
+
+
+% Test recordings, 12-12-2014
+% CIRO+
+% Participant: ADL013B1 - Brekelmans
+Index = 28; 
+RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
+% RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
+RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
+RepEntry(Index).Assoc.Shimmer_WristL = {'Timestamp','AccWristLx', 'AccWristLy', 'AccWristLz','GyroWristLx', 'GyroWristLy', 'GyroWristLz',};
+RepEntry(Index).Assoc.Shimmer_WristR = {'Timestamp','AccWristRx', 'AccWristRy', 'AccWristRz','GyroWristRx', 'GyroWristRy', 'GyroWristRz',};
+RepEntry(Index).Assoc.Shimmer_AnkleR = {'Timestamp','AccAnkleRx', 'AccAnkleRy', 'AccAnkleRz','GyroAnkleRx', 'GyroAnkleRy', 'GyroAnkleRz',};
+RepEntry(Index).Assoc.Shimmer_Sync = {'Timestamp','AccSyncx', 'AccSyncy', 'AccSyncz'};
+% RepEntry(Index).Assoc.Oxycon = {'Time'};%, 'VO2', 'VCO2', 'RER', 'HR', 'VE','BF','VO2_kg','VDe','VTin','VTex','SPO2'};
+
+RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'B1' filesep 'data_ecg.dat' ];
+RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B1' filesep 'data_wristL.dat' ];
+RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B1' filesep 'data_wristR.dat' ];
+RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B1' filesep 'data_ankleR.dat' ];
+RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B1' filesep 'data_sync.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
+
+RepEntry(Index).Dir.ALL = 'ADL013';
+RepEntry(Index).SFrq = 170.70;
+RepEntry(Index).Subject = 'S13';
+RepEntry(Index).Recdate = '20141212T074600';
+
+
+% Test recordings, 15-12-2014
+% CIRO+
+% Participant: ADL013B2 - Brekelmans
+Index = 29; 
+RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
+% RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
+RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
+RepEntry(Index).Assoc.Shimmer_WristL = {'Timestamp','AccWristLx', 'AccWristLy', 'AccWristLz','GyroWristLx', 'GyroWristLy', 'GyroWristLz',};
+RepEntry(Index).Assoc.Shimmer_WristR = {'Timestamp','AccWristRx', 'AccWristRy', 'AccWristRz','GyroWristRx', 'GyroWristRy', 'GyroWristRz',};
+RepEntry(Index).Assoc.Shimmer_AnkleR = {'Timestamp','AccAnkleRx', 'AccAnkleRy', 'AccAnkleRz','GyroAnkleRx', 'GyroAnkleRy', 'GyroAnkleRz',};
+RepEntry(Index).Assoc.Shimmer_Sync = {'Timestamp','AccSyncx', 'AccSyncy', 'AccSyncz'};
+% RepEntry(Index).Assoc.Oxycon = {'Time'};%, 'VO2', 'VCO2', 'RER', 'HR', 'VE','BF','VO2_kg','VDe','VTin','VTex','SPO2'};
+
+RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'B2' filesep 'data_ecg.dat' ];
+RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B2' filesep 'data_wristL.dat' ];
+RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B2' filesep 'data_wristR.dat' ];
+RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B2' filesep 'data_ankleR.dat' ];
+RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B2' filesep 'data_sync.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B2' filesep 'data_oxycon.dat' ];
+
+RepEntry(Index).Dir.ALL = 'ADL013';
+RepEntry(Index).SFrq = 170.70;
+RepEntry(Index).Subject = 'S13';
+RepEntry(Index).Recdate = '20141215T075000';
+
+
+% Test recordings, 05-02-2015
+% CIRO+
+% Participant: ADL013E - Brekelmans
+Index = 30; 
+RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync'}; 
+% RepEntry(Index).Systems = { 'Shimmer_ECG1', 'Shimmer_WristL', 'Shimmer_WristR', 'Shimmer_AnkleR','Shimmer_Sync', 'Oxycon' }; 
+RepEntry(Index).Assoc.Shimmer_ECG1 = {'Timestamp','AccECG1x', 'AccECG1y', 'AccECG1z','Channel1ECG1','Channel2ECG1'};
+RepEntry(Index).Assoc.Shimmer_WristL = {'Timestamp','AccWristLx', 'AccWristLy', 'AccWristLz','GyroWristLx', 'GyroWristLy', 'GyroWristLz',};
+RepEntry(Index).Assoc.Shimmer_WristR = {'Timestamp','AccWristRx', 'AccWristRy', 'AccWristRz','GyroWristRx', 'GyroWristRy', 'GyroWristRz',};
+RepEntry(Index).Assoc.Shimmer_AnkleR = {'Timestamp','AccAnkleRx', 'AccAnkleRy', 'AccAnkleRz','GyroAnkleRx', 'GyroAnkleRy', 'GyroAnkleRz',};
+RepEntry(Index).Assoc.Shimmer_Sync = {'Timestamp','AccSyncx', 'AccSyncy', 'AccSyncz'};
+% RepEntry(Index).Assoc.Oxycon = {'Time'};%, 'VO2', 'VCO2', 'RER', 'HR', 'VE','BF','VO2_kg','VDe','VTin','VTex','SPO2'};
+
+RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'E' filesep 'data_ecg.dat' ];
+RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'E' filesep 'data_wristL.dat' ];
+RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'E' filesep 'data_wristR.dat' ];
+RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'E' filesep 'data_ankleR.dat' ];
+RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'E' filesep 'data_sync.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'E' filesep 'data_oxycon.dat' ];
+
+RepEntry(Index).Dir.ALL = 'ADL013';
+RepEntry(Index).SFrq = 170.70;
+RepEntry(Index).Subject = 'S13';
+RepEntry(Index).Recdate = '20150205T114500';
+
 
 
 
