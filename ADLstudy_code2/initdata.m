@@ -107,7 +107,7 @@ RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B2' filesep 'data_
 RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B2' filesep 'data_wristR.dat' ];
 RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B2' filesep 'data_ankleR.dat' ];
 RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B2' filesep 'data_sync.dat' ];
-% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B2' filesep 'data_oxycon.dat' ];
 
 RepEntry(Index).Dir.ALL = 'ADL004';
 RepEntry(Index).SFrq = 170.70;
@@ -183,7 +183,7 @@ RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B2' filesep 'data_
 RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B2' filesep 'data_wristR.dat' ];
 RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B2' filesep 'data_ankleR.dat' ];
 RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B2' filesep 'data_sync.dat' ];
-% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B2' filesep 'data_oxycon.dat' ];
 
 RepEntry(Index).Dir.ALL = 'ADL006';
 RepEntry(Index).SFrq = 170.70;
@@ -209,7 +209,7 @@ RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'E' filesep 'data_w
 RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'E' filesep 'data_wristR.dat' ];
 RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'E' filesep 'data_ankleR.dat' ];
 RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'E' filesep 'data_sync.dat' ];
-% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'E' filesep 'data_oxycon.dat' ];
 
 RepEntry(Index).Dir.ALL = 'ADL006';
 RepEntry(Index).SFrq = 170.70;
@@ -308,11 +308,11 @@ RepEntry(Index).Assoc.Shimmer_AnkleR = {'Timestamp','AccAnkleRx', 'AccAnkleRy', 
 RepEntry(Index).Assoc.Shimmer_Sync = {'Timestamp','AccSyncx', 'AccSyncy', 'AccSyncz'};
 % RepEntry(Index).Assoc.Oxycon = {'Time'};%, 'VO2', 'VCO2', 'RER', 'HR', 'VE','BF','VO2_kg','VDe','VTin','VTex','SPO2'};
 
-RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'E' filesep 'data_ecg.dat' ];
-RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'E' filesep 'data_wristL.dat' ];
-RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'E' filesep 'data_wristR.dat' ];
-RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'E' filesep 'data_ankleR.dat' ];
-RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'E' filesep 'data_sync.dat' ];
+RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'B1' filesep 'data_ecg.dat' ];
+RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B1' filesep 'data_wristL.dat' ];
+RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B1' filesep 'data_wristR.dat' ];
+RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B1' filesep 'data_ankleR.dat' ];
+RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B1' filesep 'data_sync.dat' ];
 % RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
 
 RepEntry(Index).Dir.ALL = 'ADL008';
@@ -334,12 +334,12 @@ RepEntry(Index).Assoc.Shimmer_AnkleR = {'Timestamp','AccAnkleRx', 'AccAnkleRy', 
 RepEntry(Index).Assoc.Shimmer_Sync = {'Timestamp','AccSyncx', 'AccSyncy', 'AccSyncz'};
 % RepEntry(Index).Assoc.Oxycon = {'Time'};%, 'VO2', 'VCO2', 'RER', 'HR', 'VE','BF','VO2_kg','VDe','VTin','VTex','SPO2'};
 
-RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'E' filesep 'data_ecg.dat' ];
-RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'E' filesep 'data_wristL.dat' ];
-RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'E' filesep 'data_wristR.dat' ];
-RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'E' filesep 'data_ankleR.dat' ];
-RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'E' filesep 'data_sync.dat' ];
-% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B1' filesep 'data_oxycon.dat' ];
+RepEntry(Index).File.Shimmer_ECG1 = [ 'Data_excel' filesep 'B2' filesep 'data_ecg.dat' ];
+RepEntry(Index).File.Shimmer_WristL = [ 'Data_excel' filesep 'B2' filesep 'data_wristL.dat' ];
+RepEntry(Index).File.Shimmer_WristR = [ 'Data_excel' filesep 'B2' filesep 'data_wristR.dat' ];
+RepEntry(Index).File.Shimmer_AnkleR = [ 'Data_excel' filesep 'B2' filesep 'data_ankleR.dat' ];
+RepEntry(Index).File.Shimmer_Sync = [ 'Data_excel' filesep 'B2' filesep 'data_sync.dat' ];
+% RepEntry(Index).File.Oxycon = [ 'Data_excel' filesep 'B2' filesep 'data_oxycon.dat' ];
 
 RepEntry(Index).Dir.ALL = 'ADL008';
 RepEntry(Index).SFrq = 170.70;

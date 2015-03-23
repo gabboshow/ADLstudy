@@ -68,7 +68,7 @@ clear
 close all
 addpath(genpath('/home/310153563/Code/sw-matlab-actlab'))
 addpath(genpath('/home/310153563/Code/sw-matlab-marker'))
-Partindex = 30;
+Partindex = 20;
 st_marker_ADL
 
 %%
@@ -76,9 +76,9 @@ clear
 close all
 
 initialization
-patient = 'ADL013';
-tests = {'E'};
-Partindex = 30;
+patient = 'ADL004';
+tests = {'B2'};
+Partindex = 5;
 
 load(strcat('DATA/labels/MARKER_',num2str(Partindex),'.mat'))
 
