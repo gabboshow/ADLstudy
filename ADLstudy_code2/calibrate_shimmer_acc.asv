@@ -20,7 +20,7 @@ function calib_data = calibrate_shimmer_acc(sensor,acc_data)
             r21 = -0.078101
             r22 = 0.996944
 
-% new ECG after 13/04/2015
+% new ECG after 13/04/
 %             b0 = 2007.493047;
 %             b1 = 2068.536498;
 %             b2 = 2015.485156;
