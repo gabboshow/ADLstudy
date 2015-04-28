@@ -13,6 +13,7 @@ tests = {'E'};
 sensors = {'ecg','wristL','wristR','ankleR','sync'};
 
 
-
+% tests = {'B1'};
+% sensors = {'ankleR'};
 
 
